@@ -54,9 +54,7 @@ button, input {
 
 /* ===== FOCO DOS ELEMENTOS ===== */
 
-a:focus-visible,
-button:focus-visible,
-input:focus-visible {
+a:focus-visible, button:focus-visible, input:focus-visible {
   outline: 2px solid #3b82f6;
   outline-offset: 2px;
 }
@@ -80,14 +78,10 @@ input:focus-visible {
   position: sticky;
   top: 0;
   z-index: 1000;
-
   background: rgba(10, 14, 26, 0.88);
-
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-
   border-bottom: 1px solid #232d47;
-
   transition: background-color 0.25s ease;
 }
 
@@ -168,17 +162,12 @@ input:focus-visible {
 
 .gm-nav .nav-link {
   position: relative;
-
   padding: 1.6rem 0.9rem;
-
   color: #8b93ad;
-
   font-family: "Rajdhani", "Inter", sans-serif;
   font-size: 0.9rem;
   font-weight: 600;
-
   letter-spacing: 0.5px;
-
   transition: color 0.2s ease;
 }
 
@@ -201,17 +190,12 @@ input:focus-visible {
 
 .gm-nav .nav-link.active::after {
   content: "";
-
   position: absolute;
-
   left: 0.9rem;
   right: 0.9rem;
   bottom: 1.1rem;
-
   height: 2px;
-
   background: #e6392f;
-
   border-radius: 2px;
 }
 
@@ -222,9 +206,7 @@ input:focus-visible {
 
 .navbar-toggler {
   border: 1px solid #232d47;
-
   color: #eef1fb;
-
   padding: 0.45rem 0.65rem;
 }
 
@@ -247,29 +229,20 @@ input:focus-visible {
 .btn-icon {
   width: 38px;
   height: 38px;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   border: 1px solid #232d47;
-
   background: #131a2e;
   color: #eef1fb;
-
   border-radius: 50%;
-
-  transition:
-    border-color 0.2s ease,
-    color 0.2s ease,
-    transform 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 
 .btn-icon:hover {
   border-color: #3b82f6;
   color: #3b82f6;
-
   transform: rotate(10deg);
 }
 
@@ -280,33 +253,21 @@ input:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   gap: 0.5rem;
-
   padding: 0.55rem 1.1rem;
-
   border: none;
   border-radius: 10px;
-
   background: #ff5a1f;
   color: white;
-
   font-weight: 600;
-
-  transition:
-    filter 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
+  transition: filter 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
 .gm-btn-primary:hover {
   color: white;
-
   filter: brightness(1.08);
-
   transform: translateY(-1px);
-
   box-shadow: 0 5px 15px rgba(255, 90, 31, 0.25);
 }
 
@@ -317,18 +278,12 @@ input:focus-visible {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   gap: 0.5rem;
-
   border: 1px solid #232d47;
-
   background: transparent;
   color: #eef1fb;
-
   border-radius: 10px;
-
   font-weight: 600;
-
   transition:
     border-color 0.2s ease,
     color 0.2s ease,
@@ -338,9 +293,7 @@ input:focus-visible {
 
 .gm-btn-outline:hover {
   border-color: #3b82f6;
-
   background: rgba(59, 130, 246, 0.08);
-
   color: #3b82f6;
 }
 
@@ -351,16 +304,11 @@ input:focus-visible {
 
 .gm-hero {
   position: relative;
-
   min-height: 430px;
-
   display: flex;
   align-items: center;
-
   overflow: hidden;
-
   padding: 5.5rem 0 4rem;
-
   background:
     radial-gradient(
       90% 100% at 50% 0%,
@@ -375,7 +323,6 @@ input:focus-visible {
 .gm-hero-bg {
   position: absolute;
   inset: 0;
-
   pointer-events: none;
 }
 
@@ -384,14 +331,10 @@ input:focus-visible {
 
 .gm-hero-fighter {
   position: absolute;
-
   top: 0;
   bottom: 0;
-
   width: 42%;
-
   opacity: 0.5;
-
   filter: saturate(1.1);
 }
 
@@ -400,7 +343,6 @@ input:focus-visible {
 
 .gm-hero-fighter-left {
   left: 0;
-
   background:
     radial-gradient(
       ellipse at left,
@@ -414,7 +356,6 @@ input:focus-visible {
 
 .gm-hero-fighter-right {
   right: 0;
-
   background:
     radial-gradient(
       ellipse at right,
@@ -429,9 +370,7 @@ input:focus-visible {
 .gm-hero-content {
   position: relative;
   z-index: 2;
-
   max-width: 720px;
-
   margin: 0 auto;
 }
 
@@ -440,13 +379,10 @@ input:focus-visible {
 
 .gm-hero-title {
   margin-bottom: 1rem;
-
   font-family: "Rajdhani", "Inter", sans-serif;
   font-size: clamp(2.2rem, 5vw, 3.6rem);
   font-weight: 700;
-
   line-height: 1.05;
-
   letter-spacing: 1px;
 }
 
@@ -455,9 +391,7 @@ input:focus-visible {
 
 .gm-hero-subtitle {
   margin-bottom: 2rem;
-
   color: #8b93ad;
-
   font-size: 1.05rem;
 }
 
@@ -476,11 +410,8 @@ input:focus-visible {
 .gm-section-title {
   display: flex;
   align-items: center;
-
   gap: 0.7rem;
-
   margin-bottom: 0.4rem;
-
   font-family: "Rajdhani", "Inter", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
@@ -492,11 +423,8 @@ input:focus-visible {
 .gm-title-bar {
   width: 4px;
   height: 24px;
-
   display: inline-block;
-
   background: linear-gradient(90deg, #3b82f6, #e6392f);
-
   border-radius: 2px;
 }
 
@@ -505,7 +433,6 @@ input:focus-visible {
 
 .gm-section-subtitle {
   margin: 0;
-
   color: #8b93ad;
 }
 
@@ -523,7 +450,6 @@ input:focus-visible {
 
 .gm-search {
   position: relative;
-
   min-width: 240px;
 }
 
@@ -532,14 +458,10 @@ input:focus-visible {
 
 .gm-search i {
   position: absolute;
-
   left: 14px;
   top: 50%;
-
   transform: translateY(-50%);
-
   color: #8b93ad;
-
   pointer-events: none;
 }
 
@@ -548,17 +470,11 @@ input:focus-visible {
 
 .gm-search input {
   min-height: 40px;
-
   padding-left: 2.4rem;
-
   background: #131a2e;
-
   border: 1px solid #232d47;
-
   color: #eef1fb;
-
   border-radius: 10px;
-
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease,
@@ -577,14 +493,10 @@ input:focus-visible {
 
 .gm-search input:focus {
   background: #131a2e;
-
   color: #eef1fb;
-
   border-color: #3b82f6;
-
   box-shadow:
     0 0 0 3px rgba(59, 130, 246, 0.2);
-
   outline: none;
 }
 
@@ -595,17 +507,11 @@ input:focus-visible {
 
 .gm-team-card {
   height: 100%;
-
   padding: 1.6rem 1.2rem;
-
   background: #131a2e;
-
   border: 1px solid #232d47;
-
   border-radius: 16px;
-
   text-align: center;
-
   transition:
     transform 0.2s ease,
     border-color 0.2s ease,
@@ -617,9 +523,7 @@ input:focus-visible {
 
 .gm-team-card:hover {
   transform: translateY(-4px);
-
   border-color: #3b82f6;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
@@ -631,23 +535,16 @@ input:focus-visible {
 .gm-team-badge {
   width: 84px;
   height: 84px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0 auto 1rem;
-
   background: #1a2238;
-
   border: 1px solid #232d47;
-
   border-radius: 50%;
-
   font-family: "Rajdhani", "Inter", sans-serif;
   font-size: 1.7rem;
   font-weight: 700;
-
   transition:
     border-color 0.2s ease,
     transform 0.2s ease;
@@ -658,7 +555,6 @@ input:focus-visible {
 
 .gm-team-card:hover .gm-team-badge {
   border-color: #3b82f6;
-
   transform: scale(1.04);
 }
 
@@ -672,13 +568,10 @@ input:focus-visible {
 
 .gm-team-name {
   min-height: 2.5em;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin-bottom: 0.35rem;
-
   font-family: "Rajdhani", "Inter", sans-serif;
   font-size: 1.05rem;
   font-weight: 700;
@@ -691,13 +584,9 @@ input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 0.4rem;
-
   margin-bottom: 0.5rem;
-
   color: #8b93ad;
-
   font-size: 0.82rem;
 }
 
@@ -708,13 +597,9 @@ input:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
-
   gap: 0.4rem;
-
   margin-bottom: 1.1rem;
-
   color: #8b93ad;
-
   font-size: 0.82rem;
 }
 
@@ -723,11 +608,8 @@ input:focus-visible {
 
 .gm-team-card .gm-btn-outline {
   width: 100%;
-
   justify-content: center;
-
   padding: 0.5rem 0.9rem;
-
   font-size: 0.85rem;
 }
 
@@ -745,9 +627,7 @@ input:focus-visible {
 
 .gm-features {
   padding: 3rem 0;
-
   background: #0f1424;
-
   border-top: 1px solid #232d47;
   border-bottom: 1px solid #232d47;
 }
@@ -757,7 +637,6 @@ input:focus-visible {
 
 .gm-feature-card {
   height: 100%;
-
   padding: 0.5rem;
 }
 
@@ -766,11 +645,8 @@ input:focus-visible {
 
 .gm-feature-card i {
   display: block;
-
   margin-bottom: 0.8rem;
-
   color: #3b82f6;
-
   font-size: 1.6rem;
 }
 
@@ -779,7 +655,6 @@ input:focus-visible {
 
 .gm-feature-card h3 {
   margin-bottom: 0.35rem;
-
   font-family: "Rajdhani", "Inter", sans-serif;
   font-size: 1rem;
   font-weight: 700;
@@ -790,11 +665,8 @@ input:focus-visible {
 
 .gm-feature-card p {
   margin: 0;
-
   color: #8b93ad;
-
   font-size: 0.87rem;
-
   line-height: 1.5;
 }
 
@@ -805,9 +677,7 @@ input:focus-visible {
 
 .gm-footer {
   padding: 2rem 0;
-
   background: #0a0e1a;
-
   border-top: 1px solid #232d47;
 }
 
@@ -816,7 +686,6 @@ input:focus-visible {
 
 .gm-socials {
   display: flex;
-
   gap: 0.9rem;
 }
 
@@ -824,17 +693,12 @@ input:focus-visible {
 .gm-socials a {
   width: 36px;
   height: 36px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 1px solid #232d47;
-
   border-radius: 50%;
-
   color: #8b93ad;
-
   transition:
     color 0.2s ease,
     border-color 0.2s ease,
@@ -844,9 +708,7 @@ input:focus-visible {
 
 .gm-socials a:hover {
   color: #3b82f6;
-
   border-color: #3b82f6;
-
   transform: translateY(-2px);
 }
 
@@ -855,18 +717,14 @@ input:focus-visible {
 
 .gm-footer-links {
   display: flex;
-
   flex-wrap: wrap;
-
   gap: 1.2rem;
 }
 
 
 .gm-footer-links a {
   color: #8b93ad;
-
   font-size: 0.85rem;
-
   transition: color 0.2s ease;
 }
 
@@ -880,7 +738,6 @@ input:focus-visible {
 
 .gm-copy {
   color: #8b93ad;
-
   font-size: 0.82rem;
 }
 
@@ -891,13 +748,9 @@ input:focus-visible {
 
 .gm-modal {
   background: #131a2e;
-
   color: #eef1fb;
-
   border: 1px solid #232d47;
-
   border-radius: 16px;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
@@ -914,7 +767,6 @@ input:focus-visible {
 
 .gm-modal .modal-title {
   font-family: "Rajdhani", "Inter", sans-serif;
-
   font-weight: 700;
 }
 
@@ -923,7 +775,6 @@ input:focus-visible {
 
 .gm-modal .modal-title i {
   margin-right: 0.4rem;
-
   color: #ff5a1f;
 }
 
@@ -932,11 +783,8 @@ input:focus-visible {
 
 .gm-modal .form-control {
   background: #1a2238;
-
   border: 1px solid #232d47;
-
   color: #eef1fb;
-
   border-radius: 10px;
 }
 
@@ -952,14 +800,9 @@ input:focus-visible {
 
 .gm-modal .form-control:focus {
   background: #1a2238;
-
   color: #eef1fb;
-
   border-color: #3b82f6;
-
-  box-shadow:
-    0 0 0 3px rgba(59, 130, 246, 0.2);
-
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
   outline: none;
 }
 
@@ -968,7 +811,6 @@ input:focus-visible {
 
 .gm-modal .form-label {
   color: #eef1fb;
-
   font-weight: 600;
 }
 
@@ -983,7 +825,6 @@ input:focus-visible {
 
   .gm-nav {
     padding: 1rem 0;
-
     text-align: center;
   }
 
@@ -1004,7 +845,6 @@ input:focus-visible {
 
   .gm-actions {
     margin: 1rem 0 0;
-
     justify-content: center;
   }
 
@@ -1013,16 +853,13 @@ input:focus-visible {
 
   .gm-toolbar {
     width: 100%;
-
     flex-direction: column;
-
     align-items: stretch !important;
   }
 
 
   .gm-search {
     width: 100%;
-
     min-width: 0;
   }
 
@@ -1160,3 +997,199 @@ input:focus-visible {
     transition: none !important;
   }
 }
+
+/* =========================================================
+   TELA DE LOGIN
+========================================================= */
+
+.gm-login {
+    min-height: 100vh;
+    background: radial-gradient(70% 70% at 50% 0%,#17213b 0%, #0a0e1a 70%);
+    color: #eef1fb;
+}
+
+/* ===== CARD DE LOGIN ===== */
+
+.gm-login-card {
+    padding: 2.5rem;
+    background: rgba(19, 26, 46, 0.95);
+    border: 1px solid #232d47;
+    border-radius: 20px;
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+/* ===== LOGO ===== */
+
+.gm-login-logo {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #3b82f6, #e6392f);
+    color: #ffffff;
+    font-family: "Rajdhani", "Inter", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    text-decoration: none;
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.gm-login-logo:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    filter: brightness(1.08);
+}
+
+/* ===== TÍTULO ===== */
+
+.gm-login-title {
+    margin-bottom: 0.4rem;
+    color: #eef1fb;
+    font-family: "Rajdhani", "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.gm-login-title span {
+    color: #3b82f6;
+}
+
+/* ===== SUBTÍTULO ===== */
+
+.gm-login-subtitle {
+    margin: 0;
+    color: #8b93ad;
+    font-size: 0.9rem;
+}
+
+/* ===== LABELS ===== */
+
+.gm-login-card .form-label {
+    margin-bottom: 0.45rem;
+    color: #eef1fb;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ===== INPUTS ===== */
+
+.gm-input {
+    min-height: 46px;
+    padding: 0.7rem 0.9rem;
+    background: #1a2238;
+    border: 1px solid #232d47;
+    color: #eef1fb;
+    border-radius: 10px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.gm-input::placeholder {
+    color: #8b93ad;
+}
+
+.gm-input:focus {
+    background: #1a2238;
+    color: #eef1fb;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    outline: none;
+}
+
+/* ===== CHECKBOX ===== */
+
+.gm-login-card .form-check-input {
+    background-color: #1a2238;
+    border-color: #232d47;
+}
+
+.gm-login-card .form-check-input:checked {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.gm-login-card .form-check-label {
+    color: #8b93ad;
+    font-size: 0.82rem;
+}
+
+/* ===== LINKS ===== */
+
+.gm-login-link {
+    color: #3b82f6;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.gm-login-link:hover {
+    color: #eef1fb;
+}
+
+/* ===== BOTÃO ENTRAR ===== */
+
+.gm-login-button {
+    min-height: 46px;
+
+    border-radius: 10px;
+
+    font-family: "Rajdhani", "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* ===== TEXTO DE CADASTRO ===== */
+
+.gm-login-register {
+    margin: 0;
+
+    color: #8b93ad;
+    font-size: 0.85rem;
+}
+
+/* ===== VOLTAR ===== */
+
+.gm-back-link {
+    color: #8b93ad;
+
+    font-size: 0.8rem;
+
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+.gm-back-link:hover {
+    color: #eef1fb;
+}
+
+/* =========================================================
+   RESPONSIVIDADE — LOGIN
+========================================================= */
+
+@media (max-width: 575.98px) {
+
+    .gm-login-card {
+        padding: 2rem 1.4rem;
+        border-radius: 16px;
+    }
+
+    .gm-login-title {
+        font-size: 1.6rem;
+    }
+
+    .gm-login-subtitle {
+        font-size: 0.85rem;
+    }
+
+}
+
