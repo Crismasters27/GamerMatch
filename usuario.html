@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerMatch — Área do Usuário</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="gm-header">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- MARCA -->
+                <a href="index.html" class="gm-brand">
+                    <div class="gm-logo gm-logo-sm">GM</div>
+                    <div class="gm-brand-text gm-brand-text-sm">GAMERMATCH</div>
+                </a>
+
+                <!-- MENU -->
+                <nav class="gm-nav">
+                    <div class="d-flex align-items-center">
+                        <a href="usuario.html" class="nav-link active">Início</a>
+                        <a href="#" class="nav-link">Campeonatos</a>
+                        <a href="#" class="nav-link">Partidas</a>
+                        <a href="#" class="nav-link">Equipes</a>
+                    </div>
+                </nav>
+
+                <!-- AÇÕES -->
+                <div class="gm-actions d-flex align-items-center gap-2">
+
+                    <button class="btn-icon" type="button" title="Alterar tema">
+                        ☾
+                    </button>
+
+                    <a href="index.html" class="gm-btn-outline px-3 py-2">
+                        Sair
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- ÁREA DE BOAS-VINDAS -->
+        <section class="gm-user-hero">
+
+            <div class="container">
+
+                <div class="row align-items-center g-4">
+
+                    <!-- TEXTO -->
+                    <div class="col-lg-8">
+
+                        <p class="gm-user-overline">
+                            ÁREA DO JOGADOR
+                        </p>
+
+                        <h1 class="gm-user-title">
+                            Bem-vindo, <span>Jogador</span>
+                        </h1>
+
+                        <p class="gm-user-subtitle">
+                            Acompanhe seus campeonatos, partidas, equipe e desempenho no GamerMatch.
+                        </p>
+
+                    </div>
+
+                    <!-- PERFIL -->
+                    <div class="col-lg-4">
+
+                        <div class="gm-user-profile">
+
+                            <div class="gm-user-avatar">
+                                GM
+                            </div>
+
+                            <div>
+
+                                <h2>
+                                    Jogador
+                                </h2>
+
+                                <p>
+                                    @nickname
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ESTATÍSTICAS -->
+        <section class="gm-section">
+
+            <div class="container">
+
+                <!-- TÍTULO -->
+                <div class="mb-4">
+
+                    <div class="gm-section-title">
+                        <span class="gm-title-bar"></span>
+                        MINHAS ESTATÍSTICAS
+                    </div>
+
+                    <p class="gm-section-subtitle">
+                        Resumo da sua atividade na plataforma.
+                    </p>
+
+                </div>
+
+                <!-- CARDS -->
+                <div class="row g-4">
+
+                    <!-- CAMPEONATOS -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="gm-stat-card">
+
+                            <div class="gm-stat-icon">
+                                🏆
+                            </div>
+
+                            <p>
+                                Campeonatos
+                            </p>
+
+                            <strong>
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PARTIDAS -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="gm-stat-card">
+
+                            <div class="gm-stat-icon">
+                                ⚔
+                            </div>
+
+                            <p>
+                                Partidas
+                            </p>
+
+                            <strong>
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <!-- VITÓRIAS -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="gm-stat-card">
+
+                            <div class="gm-stat-icon">
+                                🏅
+                            </div>
+
+                            <p>
+                                Vitórias
+                            </p>
+
+                            <strong>
+                                0
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                    <!-- EQUIPE -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+
+                        <div class="gm-stat-card">
+
+                            <div class="gm-stat-icon">
+                                👥
+                            </div>
+
+                            <p>
+                                Equipe
+                            </p>
+
+                            <strong>
+                                —
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMAÇÕES DO USUÁRIO -->
+        <section class="gm-section gm-user-section">
+
+            <div class="container">
+
+                <div class="row g-4">
+
+                    <!-- CAMPEONATOS -->
+                    <div class="col-lg-7">
+
+                        <div class="gm-panel">
+
+                            <!-- CABEÇALHO DO PAINEL -->
+                            <div class="gm-panel-header">
+
+                                <div>
+
+                                    <h2>
+                                        Meus Campeonatos
+                                    </h2>
+
+                                    <p>
+                                        Campeonatos em que você participa.
+                                    </p>
+
+                                </div>
+
+                                <span class="gm-panel-icon">
+                                    🏆
+                                </span>
+
+                            </div>
+
+                            <!-- ESTADO VAZIO -->
+                            <div class="gm-empty">
+
+                                <div class="gm-empty-icon">
+                                    🏆
+                                </div>
+
+                                <h3>
+                                    Nenhum campeonato
+                                </h3>
+
+                                <p>
+                                    Você ainda não está participando de nenhum campeonato.
+                                </p>
+
+                                <a href="#" class="gm-btn-primary">
+                                    Ver campeonatos
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EQUIPE -->
+                    <div class="col-lg-5">
+
+                        <div class="gm-panel">
+
+                            <!-- CABEÇALHO DO PAINEL -->
+                            <div class="gm-panel-header">
+
+                                <div>
+
+                                    <h2>
+                                        Minha Equipe
+                                    </h2>
+
+                                    <p>
+                                        Sua equipe atual.
+                                    </p>
+
+                                </div>
+
+                                <span class="gm-panel-icon">
+                                    👥
+                                </span>
+
+                            </div>
+
+                            <!-- EQUIPE ATUAL -->
+                            <div class="gm-team-user">
+
+                                <div class="gm-team-user-badge">
+                                    —
+                                </div>
+
+                                <h3>
+                                    Nenhuma equipe
+                                </h3>
+
+                                <p>
+                                    Você ainda não está vinculado a uma equipe.
+                                </p>
+
+                                <a href="#" class="gm-btn-outline">
+                                    Encontrar equipe
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRÓXIMAS PARTIDAS -->
+        <section class="gm-section">
+
+            <div class="container">
+
+                <!-- TÍTULO -->
+                <div class="mb-4">
+
+                    <div class="gm-section-title">
+                        <span class="gm-title-bar"></span>
+                        PRÓXIMAS PARTIDAS
+                    </div>
+
+                    <p class="gm-section-subtitle">
+                        Confira suas próximas partidas.
+                    </p>
+
+                </div>
+
+                <!-- PAINEL -->
+                <div class="gm-panel">
+
+                    <div class="gm-empty">
+
+                        <div class="gm-empty-icon">
+                            ⚔
+                        </div>
+
+                        <h3>
+                            Nenhuma partida agendada
+                        </h3>
+
+                        <p>
+                            Suas próximas partidas aparecerão aqui.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="gm-footer">
+
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <p class="gm-copy mb-0">
+                    © 2026 GamerMatch. Todos os direitos reservados.
+                </p>
+
+                <div class="gm-footer-links">
+
+                    <a href="index.html">
+                        Início
+                    </a>
+
+                    <a href="#">
+                        Suporte
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

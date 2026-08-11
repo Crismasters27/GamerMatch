@@ -1,11 +1,389 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>GamerMatch — Administrador</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
-    
+
+    <!-- CABEÇALHO -->
+    <header class="gm-header">
+
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container">
+
+                <!-- MARCA -->
+                <a href="index.html" class="gm-brand text-decoration-none">
+
+                    <div class="gm-logo gm-logo-sm">
+                        GM
+                    </div>
+
+                    <div class="gm-brand-text">
+                        GamerMatch
+                        <small>PLATAFORMA DE ESPORTS</small>
+                    </div>
+
+                </a>
+
+                <!-- MENU MOBILE -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#adminNavbar"
+                    aria-controls="adminNavbar"
+                    aria-expanded="false"
+                    aria-label="Abrir menu">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <!-- MENU -->
+                <div class="collapse navbar-collapse" id="adminNavbar">
+
+                    <ul class="navbar-nav ms-auto gm-nav">
+
+                        <li class="nav-item">
+                            <a href="admin.html" class="nav-link active">
+                                Dashboard
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">
+                                Site
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <!-- AÇÕES -->
+                    <div class="gm-actions d-flex align-items-center gap-2">
+
+                        <button class="btn-icon" type="button" title="Alterar tema">
+                            ☾
+                        </button>
+
+                        <a href="login.html" class="gm-btn-outline px-3 py-2">
+                            Sair
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- TÍTULO -->
+        <section class="gm-section pb-3">
+
+            <div class="container">
+
+                <div class="mb-4">
+
+                    <div class="gm-section-title">
+
+                        <span class="gm-title-bar"></span>
+
+                        <h1 class="mb-0">
+                            Painel Administrativo
+                        </h1>
+
+                    </div>
+
+                    <p class="gm-section-subtitle">
+                        Gerencie os dados e eventos da plataforma GamerMatch.
+                    </p>
+
+                </div>
+
+
+                <!-- CARDS DOS CRUDS -->
+                <div class="row g-4">
+
+
+                    <!-- USUÁRIOS -->
+                    <div class="col-12 col-md-6 col-xl-4">
+
+                        <div class="gm-admin-card">
+
+                            <div class="gm-admin-icon">
+                                👥
+                            </div>
+
+                            <h2>
+                                Usuários
+                            </h2>
+
+                            <p>
+                                Cadastre, consulte, atualize e exclua jogadores.
+                            </p>
+
+                            <a href="view/usuario/index.html"
+                               class="gm-btn-outline w-100 py-2">
+
+                                Gerenciar usuários
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EQUIPES -->
+                    <div class="col-12 col-md-6 col-xl-4">
+
+                        <div class="gm-admin-card">
+
+                            <div class="gm-admin-icon">
+                                🛡️
+                            </div>
+
+                            <h2>
+                                Equipes
+                            </h2>
+
+                            <p>
+                                Gerencie as equipes participantes dos eventos.
+                            </p>
+
+                            <a href="view/equipe/index.html"
+                               class="gm-btn-outline w-100 py-2">
+
+                                Gerenciar equipes
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- JOGOS -->
+                    <div class="col-12 col-md-6 col-xl-4">
+
+                        <div class="gm-admin-card">
+
+                            <div class="gm-admin-icon">
+                                🎮
+                            </div>
+
+                            <h2>
+                                Jogos
+                            </h2>
+
+                            <p>
+                                Cadastre e gerencie os jogos disponíveis.
+                            </p>
+
+                            <a href="view/jogo/index.html"
+                               class="gm-btn-outline w-100 py-2">
+
+                                Gerenciar jogos
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CAMPEONATOS -->
+                    <div class="col-12 col-md-6 col-xl-6">
+
+                        <div class="gm-admin-card">
+
+                            <div class="gm-admin-icon">
+                                🏆
+                            </div>
+
+                            <h2>
+                                Campeonatos
+                            </h2>
+
+                            <p>
+                                Organize campeonatos, datas, premiações e jogos.
+                            </p>
+
+                            <a href="view/campeonato/index.html"
+                               class="gm-btn-outline w-100 py-2">
+
+                                Gerenciar campeonatos
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PARTIDAS -->
+                    <div class="col-12 col-xl-6">
+
+                        <div class="gm-admin-card">
+
+                            <div class="gm-admin-icon">
+                                ⚔️
+                            </div>
+
+                            <h2>
+                                Partidas
+                            </h2>
+
+                            <p>
+                                Acompanhe resultados e partidas dos campeonatos.
+                            </p>
+
+                            <a href="view/partida/index.html"
+                               class="gm-btn-outline w-100 py-2">
+
+                                Gerenciar partidas
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMAÇÕES -->
+        <section class="gm-features">
+
+            <div class="container">
+
+                <div class="row g-4">
+
+                    <div class="col-12 col-md-4">
+
+                        <div class="gm-feature-card">
+
+                            <i>📊</i>
+
+                            <h3>
+                                Dashboard
+                            </h3>
+
+                            <p>
+                                Visualize informações importantes da plataforma.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-4">
+
+                        <div class="gm-feature-card">
+
+                            <i>🔐</i>
+
+                            <h3>
+                                Controle de acesso
+                            </h3>
+
+                            <p>
+                                Área destinada ao gerenciamento administrativo.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-12 col-md-4">
+
+                        <div class="gm-feature-card">
+
+                            <i>🏅</i>
+
+                            <h3>
+                                eSports
+                            </h3>
+
+                            <p>
+                                Organize jogadores, equipes, jogos e campeonatos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="gm-footer">
+
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+                <span class="gm-copy">
+                    © 2026 GamerMatch
+                </span>
+
+                <div class="gm-footer-links">
+
+                    <a href="index.html">
+                        Página inicial
+                    </a>
+
+                    <a href="usuario.html">
+                        Área do usuário
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
