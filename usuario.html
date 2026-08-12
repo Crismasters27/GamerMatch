@@ -16,80 +16,140 @@
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header class="gm-header">
-        <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
+    <!-- =====================================================
+         CABEÇALHO
+    ====================================================== -->
 
-                <!-- MARCA -->
-                <a href="index.html" class="gm-brand">
-                    <div class="gm-logo gm-logo-sm">GM</div>
-                    <div class="gm-brand-text gm-brand-text-sm">GAMERMATCH</div>
-                </a>
+<header class="cabecalho">
 
-                <!-- MENU -->
-                <nav class="gm-nav">
-                    <div class="d-flex align-items-center">
-                        <a href="usuario.html" class="nav-link active">Início</a>
-                        <a href="#" class="nav-link">Campeonatos</a>
-                        <a href="#" class="nav-link">Partidas</a>
-                        <a href="#" class="nav-link">Equipes</a>
+    <div class="container-fluid px-4">
+
+        <nav class="navbar navbar-expand-lg">
+
+            <!-- LOGO -->
+            <a href="index.html" class="logo">
+                <img src="imagens/logo.png" alt="GamerMatch">
+            </a>
+
+            <!-- BOTÃO MOBILE -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavegacao"
+                aria-controls="menuNavegacao"
+                aria-expanded="false"
+                aria-label="Abrir menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <!-- MENU -->
+            <div
+                class="collapse navbar-collapse"
+                id="menuNavegacao">
+
+                <div class="menu-navegacao mx-auto">
+
+                    <div class="navbar-nav">
+
+                        <a href="usuario.html" class="nav-link active">
+                            Início
+                        </a>
+
+                        <a href="#" class="nav-link">
+                            Campeonatos
+                        </a>
+
+                        <a href="#" class="nav-link">
+                            Partidas
+                        </a>
+
+                        <a href="#" class="nav-link">
+                            Equipes
+                        </a>
+
                     </div>
-                </nav>
 
-                <!-- AÇÕES -->
-                <div class="gm-actions d-flex align-items-center gap-2">
+                </div>
 
-                    <button class="btn-icon" type="button" title="Alterar tema">
+                <!-- BOTÕES -->
+                <div class="botoes-cabecalho d-flex align-items-center gap-2">
+
+                    <button
+                        class="botao-icone"
+                        type="button"
+                        title="Alterar tema"
+                        aria-label="Alterar tema">
+
                         ☾
+
                     </button>
 
-                    <a href="index.html" class="gm-btn-outline px-3 py-2">
+                    <a
+                        href="index.html"
+                        class="botao-contorno">
+
                         Sair
+
                     </a>
 
                 </div>
 
             </div>
 
-        </div>
+        </nav>
 
-    </header>
+    </div>
+
+</header>
 
 
-    <!-- CONTEÚDO PRINCIPAL -->
+    <!-- =====================================================
+         CONTEÚDO PRINCIPAL
+    ====================================================== -->
+
     <main>
 
-        <!-- ÁREA DE BOAS-VINDAS -->
-        <section class="gm-user-hero">
+        <!-- =================================================
+             BOAS-VINDAS
+        ================================================== -->
+
+        <section class="area-usuario">
 
             <div class="container">
 
                 <div class="row align-items-center g-4">
 
                     <!-- TEXTO -->
+
                     <div class="col-lg-8">
 
-                        <p class="gm-user-overline">
+                        <p class="sobrelinha-usuario">
                             ÁREA DO JOGADOR
                         </p>
 
-                        <h1 class="gm-user-title">
-                            Bem-vindo, <span>Jogador</span>
+                        <h1 class="titulo-usuario">
+                            Bem-vindo,
+                            <span>Jogador</span>
                         </h1>
 
-                        <p class="gm-user-subtitle">
-                            Acompanhe seus campeonatos, partidas, equipe e desempenho no GamerMatch.
+                        <p class="subtitulo-usuario">
+                            Acompanhe seus campeonatos, partidas,
+                            equipe e desempenho no GamerMatch.
                         </p>
 
                     </div>
 
+
                     <!-- PERFIL -->
+
                     <div class="col-lg-4">
 
-                        <div class="gm-user-profile">
+                        <div class="perfil-usuario">
 
-                            <div class="gm-user-avatar">
+                            <div class="avatar-usuario">
                                 GM
                             </div>
 
@@ -116,34 +176,44 @@
         </section>
 
 
-        <!-- ESTATÍSTICAS -->
-        <section class="gm-section">
+        <!-- =================================================
+             ESTATÍSTICAS
+        ================================================== -->
+
+        <section class="secao">
 
             <div class="container">
 
                 <!-- TÍTULO -->
+
                 <div class="mb-4">
 
-                    <div class="gm-section-title">
-                        <span class="gm-title-bar"></span>
-                        MINHAS ESTATÍSTICAS
-                    </div>
+                    <h2 class="titulo-secao">
 
-                    <p class="gm-section-subtitle">
+                        <span class="barra-titulo"></span>
+
+                        MINHAS ESTATÍSTICAS
+
+                    </h2>
+
+                    <p class="subtitulo-secao">
                         Resumo da sua atividade na plataforma.
                     </p>
 
                 </div>
 
+
                 <!-- CARDS -->
+
                 <div class="row g-4">
 
                     <!-- CAMPEONATOS -->
+
                     <div class="col-12 col-sm-6 col-lg-3">
 
-                        <div class="gm-stat-card">
+                        <div class="estatistica-card">
 
-                            <div class="gm-stat-icon">
+                            <div class="icone-estatistica">
                                 🏆
                             </div>
 
@@ -159,12 +229,14 @@
 
                     </div>
 
+
                     <!-- PARTIDAS -->
+
                     <div class="col-12 col-sm-6 col-lg-3">
 
-                        <div class="gm-stat-card">
+                        <div class="estatistica-card">
 
-                            <div class="gm-stat-icon">
+                            <div class="icone-estatistica">
                                 ⚔
                             </div>
 
@@ -180,12 +252,14 @@
 
                     </div>
 
+
                     <!-- VITÓRIAS -->
+
                     <div class="col-12 col-sm-6 col-lg-3">
 
-                        <div class="gm-stat-card">
+                        <div class="estatistica-card">
 
-                            <div class="gm-stat-icon">
+                            <div class="icone-estatistica">
                                 🏅
                             </div>
 
@@ -201,12 +275,14 @@
 
                     </div>
 
+
                     <!-- EQUIPE -->
+
                     <div class="col-12 col-sm-6 col-lg-3">
 
-                        <div class="gm-stat-card">
+                        <div class="estatistica-card">
 
-                            <div class="gm-stat-icon">
+                            <div class="icone-estatistica">
                                 👥
                             </div>
 
@@ -229,20 +305,23 @@
         </section>
 
 
-        <!-- INFORMAÇÕES DO USUÁRIO -->
-        <section class="gm-section gm-user-section">
+        <!-- =================================================
+             CAMPEONATOS E EQUIPE
+        ================================================== -->
+
+        <section class="secao secao-usuario">
 
             <div class="container">
 
                 <div class="row g-4">
 
                     <!-- CAMPEONATOS -->
+
                     <div class="col-lg-7">
 
-                        <div class="gm-panel">
+                        <div class="painel">
 
-                            <!-- CABEÇALHO DO PAINEL -->
-                            <div class="gm-panel-header">
+                            <div class="cabecalho-painel">
 
                                 <div>
 
@@ -256,16 +335,16 @@
 
                                 </div>
 
-                                <span class="gm-panel-icon">
+                                <span class="icone-painel">
                                     🏆
                                 </span>
 
                             </div>
 
-                            <!-- ESTADO VAZIO -->
-                            <div class="gm-empty">
 
-                                <div class="gm-empty-icon">
+                            <div class="estado-vazio">
+
+                                <div class="icone-vazio">
                                     🏆
                                 </div>
 
@@ -274,11 +353,16 @@
                                 </h3>
 
                                 <p>
-                                    Você ainda não está participando de nenhum campeonato.
+                                    Você ainda não está participando
+                                    de nenhum campeonato.
                                 </p>
 
-                                <a href="#" class="gm-btn-primary">
+                                <a
+                                    href="#"
+                                    class="botao-principal">
+
                                     Ver campeonatos
+
                                 </a>
 
                             </div>
@@ -289,12 +373,12 @@
 
 
                     <!-- EQUIPE -->
+
                     <div class="col-lg-5">
 
-                        <div class="gm-panel">
+                        <div class="painel">
 
-                            <!-- CABEÇALHO DO PAINEL -->
-                            <div class="gm-panel-header">
+                            <div class="cabecalho-painel">
 
                                 <div>
 
@@ -308,16 +392,16 @@
 
                                 </div>
 
-                                <span class="gm-panel-icon">
+                                <span class="icone-painel">
                                     👥
                                 </span>
 
                             </div>
 
-                            <!-- EQUIPE ATUAL -->
-                            <div class="gm-team-user">
 
-                                <div class="gm-team-user-badge">
+                            <div class="equipe-usuario">
+
+                                <div class="distintivo-equipe">
                                     —
                                 </div>
 
@@ -326,11 +410,16 @@
                                 </h3>
 
                                 <p>
-                                    Você ainda não está vinculado a uma equipe.
+                                    Você ainda não está vinculado
+                                    a uma equipe.
                                 </p>
 
-                                <a href="#" class="gm-btn-outline">
+                                <a
+                                    href="#"
+                                    class="botao-contorno">
+
                                     Encontrar equipe
+
                                 </a>
 
                             </div>
@@ -346,31 +435,40 @@
         </section>
 
 
-        <!-- PRÓXIMAS PARTIDAS -->
-        <section class="gm-section">
+        <!-- =================================================
+             PRÓXIMAS PARTIDAS
+        ================================================== -->
+
+        <section class="secao">
 
             <div class="container">
 
                 <!-- TÍTULO -->
+
                 <div class="mb-4">
 
-                    <div class="gm-section-title">
-                        <span class="gm-title-bar"></span>
-                        PRÓXIMAS PARTIDAS
-                    </div>
+                    <h2 class="titulo-secao">
 
-                    <p class="gm-section-subtitle">
+                        <span class="barra-titulo"></span>
+
+                        PRÓXIMAS PARTIDAS
+
+                    </h2>
+
+                    <p class="subtitulo-secao">
                         Confira suas próximas partidas.
                     </p>
 
                 </div>
 
+
                 <!-- PAINEL -->
-                <div class="gm-panel">
 
-                    <div class="gm-empty">
+                <div class="painel">
 
-                        <div class="gm-empty-icon">
+                    <div class="estado-vazio">
+
+                        <div class="icone-vazio">
                             ⚔
                         </div>
 
@@ -393,18 +491,21 @@
     </main>
 
 
-    <!-- RODAPÉ -->
-    <footer class="gm-footer">
+    <!-- =====================================================
+         RODAPÉ
+    ====================================================== -->
+
+    <footer class="rodape">
 
         <div class="container">
 
             <div class="d-flex justify-content-between align-items-center">
 
-                <p class="gm-copy mb-0">
+                <p class="copyright mb-0">
                     © 2026 GamerMatch. Todos os direitos reservados.
                 </p>
 
-                <div class="gm-footer-links">
+                <div class="links-rodape">
 
                     <a href="index.html">
                         Início
@@ -424,7 +525,10 @@
 
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 
 </body>
 

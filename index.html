@@ -11,206 +11,278 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- Fonte -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- CSS -->
+    <!-- CSS do projeto -->
     <link rel="stylesheet" href="css/estilo.css">
-
 </head>
+
 <body>
-    
-    <!-- ===================== HEADER ===================== -->
-  <header class="gm-header">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid px-4">
 
-        <a class="navbar-brand gm-brand" href="#">
-          <img src="imagens/logo.png" alt="GamerMatch" class="gm-logo-img">
-          <span class="gm-brand-text">Plataforma de<span class="text-accent">eSports</span>
-        </a>
+    <!-- ===================== CABEÇALHO ===================== -->
+    <header class="cabecalho">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-4">
+                <!-- LOGO -->
+                <a class="navbar-brand logo" href="#">
+                    <img src="imagens/logo.png" alt="GamerMatch">
+                </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#gmNav" aria-controls="gmNav" aria-expanded="false" aria-label="Abrir menu">
-          <i class="bi bi-list"></i>
-        </button>
+                <!-- BOTÃO DO MENU MOBILE -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacao" aria-controls="menuNavegacao" aria-expanded="false" aria-label="Abrir menu">
+                    <i class="bi bi-list"></i>
+                </button>
 
-        <div class="collapse navbar-collapse" id="gmNav">
-          <ul class="navbar-nav mx-auto gm-nav">
-            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-            <li class="nav-item"><a class="nav-link" href="#campeonatos">Campeonatos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#jogos">Jogos</a></li>
-            <li class="nav-item"><a class="nav-link active" href="#equipes">Equipes</a></li>
-            <li class="nav-item"><a class="nav-link" href="#jogadores">Jogadores</a></li>
-            <li class="nav-item"><a class="nav-link" href="#partidas">Partidas</a></li>
-          </ul>
+                <!-- MENU -->
+                <div class="collapse navbar-collapse" id="menuNavegacao">
+                    <ul class="navbar-nav mx-auto menu-navegacao">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#inicio">Início</a>
+                        </li>
 
-          <div class="d-flex align-items-center gap-2 gm-actions">
-            <button id="themeToggle" class="btn btn-icon" type="button" title="Alternar tema" aria-label="Alternar tema claro/escuro">
-              <i class="bi bi-sun-fill"></i>
-            </button>
-            <a href="login.html" class="btn btn-outline-light btn-sm gm-btn-outline">
-              <i class="bi bi-box-arrow-in-right"></i> Entrar
+                        <li class="nav-item">
+                            <a class="nav-link" href="#campeonatos">Campeonatos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jogos">Jogos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#equipes">Equipes</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#jogadores">Jogadores</a>
+                        </li>
+                    </ul>
+
+                    <!-- BOTÕES DO CABEÇALHO -->
+                    <div class="d-flex align-items-center gap-2 botoes-cabecalho">
+                        <button id="themeToggle" class="btn botao-icone" type="button" title="Alternar tema" aria-label="Alternar tema claro/escuro">
+                            <i class="bi bi-sun-fill"></i>
+                        </button>
+
+                        <a href="login.html" class="btn btn-outline-light btn-sm botao-contorno">
+                            <i class="bi bi-box-arrow-in-right"></i>Entrar</a>
+
+                        <a href="cadastrar.html" class="btn btn-sm botao-principal">
+                            <i class="bi bi-person-plus-fill"></i>Cadastre-se
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ===================== SEÇÃO INICIAL ===================== -->
+
+    <section class="secao-inicial" id="inicio">
+        <div class="fundo-secao-inicial">
+            <div class="efeito-lateral efeito-azul"></div>
+            <div class="efeito-lateral efeito-vermelho"></div>
+        </div>
+
+        <div class="container conteudo-inicial text-center">
+            <h1 class="titulo-inicial">A ARENA DA<br><span class="text-accent">COMUNIDADE FGC</span></h1>
+
+            <p class="subtitulo-inicial">Encontre equipes, forme alianças e conquiste torneios.</p>
+
+            <a href="#equipes" class="btn botao-principal btn-lg">
+                <i class="bi bi-people-fill"></i>Explorar Equipes</a>
+        </div>
+    </section>
+
+
+    <!-- ===================== EQUIPES ===================== -->
+
+    <section class="secao" id="equipes">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+                <div>
+                    <h2 class="titulo-secao"><span class="barra-titulo"></span>Equipes FGC</h2>
+                    <p class="subtitulo-secao">Conheça as principais equipes da cena competitiva de Fighting Games.</p>
+                </div>
+
+
+                <!-- PESQUISA E BOTÃO -->
+                <div class="d-flex gap-2 barra-ferramentas">
+                    <div class="pesquisa">
+                        <i class="bi bi-search"></i>
+                        <input type="text" id="teamSearch" class="form-control" placeholder="Pesquisar equipe...">
+                    </div>
+
+                    <button class="btn botao-principal text-nowrap" type="button" data-bs-toggle="modal" data-bs-target="#criarEquipeModal">
+                        <i class="bi bi-plus-lg"></i>Criar Equipe
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- ÁREA ONDE OS CARDS SERÃO GERADOS PELO JAVASCRIPT -->
+            <div class="row g-4" id="teamsGrid">
+                <!-- Cards de equipe gerados via JavaScript -->
+            </div>
+
+
+            <!-- BOTÃO VER MAIS -->
+            <div class="text-center mt-4">
+                <button class="btn botao-contorno" id="verMaisEquipes" type="button">Ver mais equipes
+                    <i class="bi bi-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================== DESTAQUES ===================== -->
+
+    <section class="destaques">
+        <div class="container">
+            <div class="row g-4">
+                <!-- DESTAQUE 1 -->
+                <div class="col-6 col-lg-3">
+                    <div class="card-destaque">
+                        <i class="bi bi-people-fill"></i>
+                        <h3>Equipes Competitivas</h3>
+                        <p>As melhores equipes de Fighting Games reunidas em um só lugar.</p>
+                    </div>
+                </div>
+
+                <!-- DESTAQUE 2 -->
+                <div class="col-6 col-lg-3">
+                    <div class="card-destaque">
+                        <i class="bi bi-trophy-fill"></i>
+                        <h3>Torneios Oficiais</h3>
+                        <p>Participe de campeonatos organizados pela comunidade e por parceiros.</p>
+                    </div>
+                </div>
+
+                <!-- DESTAQUE 3 -->
+                <div class="col-6 col-lg-3">
+                    <div class="card-destaque">
+                        <i class="bi bi-controller"></i>
+                        <h3>Desafios Diários</h3>
+                        <p>Desafie outras equipes e suba no ranking da GamerMatch.</p>
+                    </div>
+                </div>
+
+
+                <!-- DESTAQUE 4 -->
+                <div class="col-6 col-lg-3">
+                    <div class="card-destaque">
+                        <i class="bi bi-star-fill"></i>
+                        <h3>Cena FGC Unida</h3>
+                        <p>Conecte-se, compita e fortaleça a comunidade de Fighting Games.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===================== RODAPÉ ===================== -->
+
+    <footer class="rodape">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+            <!-- LOGO DO RODAPÉ -->
+            <a class="navbar-brand logo-rodape" href="#">
+                <img src="imagens/logo.png" alt="GamerMatch">
             </a>
-            <a href="cadastrar.html" class="btn btn-sm gm-btn-primary">
-              <i class="bi bi-person-plus-fill"></i> Cadastre-se
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </header>
 
-  <!-- ===================== HERO ===================== -->
-  <section class="gm-hero" id="inicio">
-    <div class="gm-hero-bg">
-      <div class="gm-hero-fighter gm-hero-fighter-left"></div>
-      <div class="gm-hero-fighter gm-hero-fighter-right"></div>
-    </div>
-    <div class="container gm-hero-content text-center">
-      <h1 class="gm-hero-title">
-        A ARENA DA<br>
-        <span class="text-accent">COMUNIDADE FGC</span>
-      </h1>
-      <p class="gm-hero-subtitle">Encontre equipes, forme alianças e conquiste torneios.</p>
-      <a href="#equipes" class="btn gm-btn-primary btn-lg">
-        <i class="bi bi-people-fill"></i> Explorar Equipes
-      </a>
-    </div>
-  </section>
 
-  <!-- ===================== EQUIPES ===================== -->
-  <section class="gm-section" id="equipes">
-    <div class="container">
-      <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
-        <div>
-          <h2 class="gm-section-title"><span class="gm-title-bar"></span>Equipes FGC</h2>
-          <p class="gm-section-subtitle">Conheça as principais equipes da cena competitiva de Fighting Games.</p>
-        </div>
+            <!-- REDES SOCIAIS -->
+            <div class="redes-sociais">
+                <a href="#" aria-label="Discord">
+                    <i class="bi bi-discord"></i>
+                </a>
 
-        <div class="d-flex gap-2 gm-toolbar">
-          <div class="gm-search">
-            <i class="bi bi-search"></i>
-            <input type="text" id="teamSearch" class="form-control" placeholder="Pesquisar equipe...">
-          </div>
-          <button class="btn gm-btn-primary text-nowrap" type="button" data-bs-toggle="modal" data-bs-target="#criarEquipeModal">
-            <i class="bi bi-plus-lg"></i> Criar Equipe
-          </button>
-        </div>
-      </div>
+                <a href="#" aria-label="Twitter">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
 
-      <div class="row g-4" id="teamsGrid">
-        <!-- Cards de equipe gerados via JavaScript -->
-      </div>
+                <a href="#" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
 
-      <div class="text-center mt-4">
-        <button class="btn gm-btn-outline" id="verMaisEquipes" type="button">
-          Ver mais equipes <i class="bi bi-chevron-down"></i>
-        </button>
-      </div>
-    </div>
-  </section>
+                <a href="#" aria-label="YouTube">
+                    <i class="bi bi-youtube"></i>
+                </a>
 
-  <!-- ===================== DESTAQUES ===================== -->
-  <section class="gm-features">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-6 col-lg-3">
-          <div class="gm-feature-card">
-            <i class="bi bi-people-fill"></i>
-            <h3>Equipes Competitivas</h3>
-            <p>As melhores equipes de Fighting Games reunidas em um só lugar.</p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="gm-feature-card">
-            <i class="bi bi-trophy-fill"></i>
-            <h3>Torneios Oficiais</h3>
-            <p>Participe de campeonatos organizados pela comunidade e por parceiros.</p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="gm-feature-card">
-            <i class="bi bi-controller"></i>
-            <h3>Desafios Diários</h3>
-            <p>Desafie outras equipes e suba no ranking da GamerMatch.</p>
-          </div>
-        </div>
-        <div class="col-6 col-lg-3">
-          <div class="gm-feature-card">
-            <i class="bi bi-star-fill"></i>
-            <h3>Cena FGC Unida</h3>
-            <p>Conecte-se, compita e fortaleça a comunidade de Fighting Games.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== FOOTER ===================== -->
-  <footer class="gm-footer">
-    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
-      <a class="navbar-brand gm-brand gm-brand-sm" href="#">
-        <span class="gm-logo gm-logo-sm">GM</span>
-        <span class="gm-brand-text-sm">GAMER<span class="text-accent">MATCH</span></span>
-      </a>
-
-      <div class="gm-socials">
-        <a href="#" aria-label="Discord"><i class="bi bi-discord"></i></a>
-        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
-      </div>
-
-      <div class="gm-footer-links">
-        <a href="#">Sobre Nós</a>
-        <a href="#">Contato</a>
-        <a href="#">Termo de Uso</a>
-        <a href="#">Política de Privacidade</a>
-      </div>
-
-      <p class="gm-copy mb-0">&copy; 2026 GamerMatch. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- ===================== MODAL: CRIAR EQUIPE ===================== -->
-  <div class="modal fade" id="criarEquipeModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content gm-modal">
-        <div class="modal-header">
-          <h5 class="modal-title"><i class="bi bi-shield-plus"></i> Criar Equipe</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <form id="criarEquipeForm">
-          <div class="modal-body">
-            <div class="mb-3">
-              <label for="nomeEquipe" class="form-label">Nome da equipe</label>
-              <input type="text" class="form-control" id="nomeEquipe" required>
             </div>
-            <div class="mb-3">
-              <label for="paisEquipe" class="form-label">País</label>
-              <input type="text" class="form-control" id="paisEquipe" placeholder="Ex: Brasil" required>
-            </div>
-            <div class="mb-3">
-              <label for="siglaEquipe" class="form-label">Sigla (2 a 4 letras)</label>
-              <input type="text" class="form-control" id="siglaEquipe" maxlength="4" required>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn gm-btn-outline" data-bs-dismiss="modal">Cancelar</button>
-            <button type="submit" class="btn gm-btn-primary">Criar equipe</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
 
-  <!-- Bootstrap Bundle JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
+
+            <!-- LINKS DO RODAPÉ -->
+            <div class="links-rodape">
+                <a href="#">Sobre Nós</a>
+                <a href="#">Contato</a>
+                <a href="#">Termo de Uso</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <p class="copyright mb-0">&copy; 2026 GamerMatch.Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <!-- ===================== MODAL: CRIAR EQUIPE ===================== -->
+
+    <div class="modal fade" id="criarEquipeModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-personalizado">
+
+                <!-- CABEÇALHO DO MODAL -->
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="bi bi-shield-plus"></i>Criar Equipe
+                      </h5>
+
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+
+
+                <!-- FORMULÁRIO -->
+                <form id="formularioCriarEquipe">
+                    <div class="modal-body">
+
+                        <!-- NOME -->
+                        <div class="mb-3">
+                            <label for="nomeEquipe" class="form-label">Nome da equipe</label>
+                            <input type="text" class="form-control" id="nomeEquipe" required>
+                        </div>
+
+
+                        <!-- PAÍS -->
+                        <div class="mb-3">
+                            <label for="paisEquipe" class="form-label">País</label>
+                            <input type="text" class="form-control" id="paisEquipe" placeholder="Ex: Brasil" required>
+                        </div>
+
+                        <!-- SIGLA -->
+                        <div class="mb-3">
+                            <label for="siglaEquipe" class="form-label">Sigla (2 a 4 letras)</label>
+                            <input type="text" class="form-control" id="siglaEquipe" maxlength="4" required>
+                        </div>
+                    </div>
+
+                    <!-- BOTÕES DO MODAL -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn botao-contorno" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn botao-principal">Criar equipe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===================== JAVASCRIPT ===================== -->
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript do projeto -->
+    <script src="js/script.js"></script>
+
 </body>
 </html>
-
-
-<body>
-
-
